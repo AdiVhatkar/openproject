@@ -2,33 +2,43 @@
 <html>
 <head>
 <style>
-#customers {
+#info{
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
+
 }
 
-#customers td, #customers th {
+#info td, #info th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+#info tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#info tr:hover {background-color: #ddd;}
 
-#customers th {
+#info th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color:#4458dc;
   color: white;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #44d4dc;
+  color: white;
+  text-align: center;
+}
 </style>
 </head>
 <body>
 
-<table id="customers">
+<table id="info" align="center">
   <tr>
     <th>Degree</th>
     <th>Subject</th>
@@ -51,6 +61,10 @@
   </tr>
   <tr>
 </table>
-
+<footer class="foot">
+  <p>Posted by: Aditi Vhatkar</p>
+  <p class="pa">Contact information: <a href="adivhatkar@gmail.com">adivhatkar@gmail.com
+  </a></p>
+</footer>
 </body>
 </html>

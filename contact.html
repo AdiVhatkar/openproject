@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <style>
+  .frm{
+    width:50%;
+    height:50%;
+    margin: auto;
+  }
 input[type=text], select {
   width: 100%;
-  padding: 12px 20px;
+  padding:12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -31,20 +36,29 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
 }
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #44d4dc;
+  color: white;
+  text-align: center;
+}
 </style>
 <body>
 
-<h3>Conact Me</h3>
+<h3 align="center">Conact Me</h3>
 
-<div>
+<div class="frm">
   <form>
-    <label for="fname">First Name</label>
+    First Name:
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname">Last Name</label>
+  Last Name:
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="country">Country</label>
+    Country:
     <select id="country" name="country">
       <option value="australia">Germany</option>
       <option value="australia">India</option>
@@ -55,5 +69,10 @@ div {
     <input type="submit" value="Submit">
   </form>
 </div>
+<footer class="foot">
+  <p>Posted by: Aditi Vhatkar</p>
+  <p class="pa">Contact information:<a href="adivhatkar@gmail.com">adivhatkar@gmail.com
+  </a></p>
+</footer>
 </body>
 </html>
